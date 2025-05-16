@@ -3,13 +3,20 @@
 // Task 01
 // Создайте класс Paragraph_01 содержащий следующие свойства: text - текст внутри параграфа. Тип укажите самостоятельно. Реализуйте метод render который создает объект p (тег параграф), добавляет в него текст из свойства text и возвращает параграф. 
 
-// тут пишем класс
+class Paragraph_01 {
+    text: string;
+    render() {
+        const p = document.createElement('p');
+        p.textContent = this.text;
+        return p;
+    }
+}
 
 
 // Для проверки кода снимите комментарий ниже. После проверки - можно вернуть комментарий, чтобы не мешал вывод. Для остальных задач - аналогично.
-// const p_01 = new Paragraph_01();
-// p_01.text = 'A paragraph is a series of sentences that are organized and coherent.';
-// document.querySelector('.out-1').append(p_01.render());
+const p_01 = new Paragraph_01();
+p_01.text = 'A paragraph is a series of sentences that are organized and coherent.';
+document.querySelector('.out-1').append(p_01.render());
 
 
 // Task 02
