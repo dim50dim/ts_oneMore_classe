@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Sprint 09. Классы в TS</title>
+  <meta name="author" content="itgid.info">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- <link rel="stylesheet" href="css/night.css"> -->
+  <link rel="icon" type="image/svg+xml" href="https://itgid.info/favicon.svg">
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="one-column">
+        <h1>TypeScript. Sprint 09</h1>
+        <h2>Классы в TS TypeScript</h2>
+        <p>course <a href="https://itgid.info">itgid.info</a></p>
+
+        <p>Для применения темы "ночь" удалите комментарий с night.css. </p>
+        <p>Условие: везде где не сказано о способе задания типа данных - тип задается явно.</p>
+
+        <section>
+          <h3>Task 01</h3>
+          <p>Создайте класс Paragraph_01 содержащий следующие свойства: text - текст внутри параграфа. Тип укажите
+            самостоятельно. Реализуйте метод render который создает объект p (тег параграф), добавляет в него текст из
+            свойства text и возвращает параграф. </p>
+          <div class="out-1 out"></div>
+        </section>
+
+        <section>
+          <h3>Task 02</h3>
+          <p> Создайте класс Paragraph_02. Скопируйте в него реализацию свойств и методов из Paragraph_01. Допишите
+            конструктор, который принимает текст и присваивает его свойству text класса. Кстати, надеюсь вы догадались
+            указать, что метод render возвращает тип HTMLParagraphElement.</p>
+          <div class="out out-2"></div>
+        </section>
+
+        <section>
+          <h3>Task 03</h3>
+          <p>Создайте класс Paragraph_03. Скопируйте в него реализацию свойств и методов из Paragraph_02. Добавьте
+            свойство bold типа boolean, которое по умолчанию равно false. В метод render() добавьте строку, которая
+            проверяет свойство bold и если оно равно true, оборачивает весь текст внутри параграфа тегом b. В
+            конструктор добавьте вторым аргументом свойство bold.</p>
+          <div class="out out-3"></div>
+        </section>
+
+        <section>
+          <h3>Task 04</h3>
+          <p>Внесите изменение в предыдущий класс, сделав свойство bold, в функции конструкторе - необязательным.</p>
+          <div class="out out-4"></div>
+        </section>
+
+        <section>
+          <h3>Task 05</h3>
+          <p>Создайте класс Paragraph_05, в который скопируйте содержимое класса Paragraph_03. Внесите изменения в
+            конструктор - удаляйте пробелы по краям текста перед присвоением в свойство text. Добавьте изменение в метод
+            render(), при выводе текста первая буква должна быть заглавной всегда.</p>
+          <div class="out out-5"></div>
+
+        </section>
+
+        <section>
+          <h3>Task 06</h3>
+          <p>Изучите как устроен класс ParagraphExample и как в него передаются аргументы. Здесь применяется деструкция,
+            данный подход очень облегчает работу если аргументов несколько.</p>
+          <div class="out out-6"></div>
+        </section>
+
+        <section>
+          <h3>Task 07</h3>
+          <p>Напишите класс List_07, который принимает свойство data тип - массив строк. Возвращает список ul с
+            перечислением данных элементов. Генерация списка производится методом render().</p>
+          <div class="out out-7"></div>
+        </section>
+
+        <section>
+          <h3>Task 08</h3>
+          <p>Напишите класс List_08 (скопируйте код предыдущего класса в него), который может принимать объект - data_08
+            и на основе его генерировать список (ol, или ul). Реализуйте свойство type, которое может принимать строку
+            или 'ul' или 'ol', свойство по умолчанию равно 'ul'. Внесите необходимые изменения в конструктор и метод
+            render(). Сделайте так, что свойство type необязательное.</p>
+          <div class="out out-8"></div>
+
+        </section>
+        </section>
+
+        <section>
+          <h3>Task 09</h3>
+          <p>Создайте класс List_09, который содержит поля (свойства) data и cssClass - оба массивы string. Реализуйте
+            конструктор и метод render(), который возвращает список ul созданный на базе полученных данныx, и данный
+            список ul содержит классы CSS указанные в свойстве cssClass.</p>
+          <div class="out out-9"></div>
+        </section>
+
+        <section>
+          <h3>Task 10</h3>
+          <p>Создайте класс ModernString, содержащий свойство data - строка. Создайте конструктор, который будет
+            заполнять данное свойство. Создайте метод after, который может принять строку и добавить в конец строки
+            записанной в свойстве data (свойство data изменяется). Метод должен возвращать новое свойство data. Создайте
+            метод before, который может принять строку и добавить в начало строки записанной в свойстве data (свойство
+            data изменяется). Метод должен возвращать новое свойство data. </p>
+        </section>
+
+
+        <section>
+          <h3>Task 11</h3>
+          <p>Класс может содержать только метод. Создайте класс ConsoleMessage, который содержит только метод void,
+            метод выводит в консоль то, что принимает в качестве аргумента. Имя метода - say.</p>
+        </section>
+
+        <section>
+          <h3>Task 12</h3>
+          <p>Создайте класс Cart, который содержит только один метод total (возвращает число), метод может принять
+            массив goods (смотрите сам объект) и возвращает сумму товаров в нем. </p>
+        </section>
+
+        <section>
+          <h3>Task 13</h3>
+          <p>Создайте класс CellOperator, который содержит свойство code - string, свойство задается при создании объекта
+            и метод operator(), который возвращает название оператора в зависимости от кода. Для определения оператора
+            воспользуйтесь таблицей ниже. Если оператор не найден - возвращается пустая строка.</p>
+
+        </section>
+
+        <section>
+          <h3>Task 14</h3>
+          <p>Создайте класс CellPhone в который скопируйте код из CellOperator. Добавьте свойство phone тип string.
+            Измените конструктор так, чтобы он принимал номер телефона в виде строки '+380730010113' после чего разделял
+            данную строку на части. В свойство code класса заносился код - символі 073 для данного номера, а в свойство
+            phone - символы 0010113. Метод operator не меняем. </p>
+
+
+
+        </section>
+
+        <section>
+          <h3>Task 15</h3>
+          <p>Создайте класс Palindrome, который принимает в конструкторе строку и записывает в свойство str. Напишите
+            метод check(), который заносит в свойство isPalindrome (по умолчанию false) true, если строка в str является
+            палиндромом, и false если не является.
+
+          </p>
+
+
+        </section>
+
+      </div>
+
+      <div class="one-column">
+        <footer>
+          <p>Курсы Itgid.info</p>
+          <p><a href="https://itgid.info/ru/course/js20">javascript 2.0</a> | <a
+              href="https://itgid.info/ru/course/arraymethod">Методы массивов JavaScript</a> | <a
+              href="https://itgid.info/ru/course/function-2021">Функции JavaScript</a> | <a
+              href="https://itgid.info/ru/course/reactjs">ReactJS</a></p>
+        </footer>
+      </div>
+    </div>
+  </div>
+
+  <script src="./javascript/sprint_09.js"></script>
+</body>
+
+</html>
