@@ -76,8 +76,8 @@ document.querySelector('.out-3').append(p_03.render());
 // Внесите изменение в предыдущий класс, сделав свойство bold, в функции конструкторе - необязательным.
 
 // Для проверки кода снимите комментарий ниже
-// const p_04 = new Paragraph_03('Земля – это память, за которую стоит бороться.');
-// document.querySelector('.out-4').append(p_04.render());
+const p_04 = new Paragraph_03('Земля – это память, за которую стоит бороться.');
+document.querySelector('.out-4').append(p_04.render());
 
 
 

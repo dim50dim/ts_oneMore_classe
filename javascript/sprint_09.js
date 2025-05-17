@@ -45,6 +45,8 @@ class Paragraph_03 {
 }
 const p_03 = new Paragraph_03('Земля – это память, за которую стоит бороться.', true);
 document.querySelector('.out-3').append(p_03.render());
+const p_04 = new Paragraph_03('Земля – это память, за которую стоит бороться.');
+document.querySelector('.out-4').append(p_04.render());
 class ParagraphExample {
     text;
     wrap;
