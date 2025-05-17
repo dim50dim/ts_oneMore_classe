@@ -52,17 +52,25 @@ class Paragraph_03 {
      }
 
     render() : HTMLParagraphElement {
-        if(this.bold) 
+    
         const p = document.createElement('p');
-        p.textContent = this.text;
+
+        if(this.bold){
+            const b = document.createElement('b');
+            b.textContent = this.text;
+            p.append(b);
+        }else{
+                p.textContent = this.text;
+        }
+    
         return p;
     }
 }
 
 
 // Для проверки кода снимите комментарий ниже
-// const p_03 = new Paragraph_03('Земля – это память, за которую стоит бороться.', false);
-// document.querySelector('.out-3').append(p_03.render());
+const p_03 = new Paragraph_03('Земля – это память, за которую стоит бороться.', true);
+document.querySelector('.out-3').append(p_03.render());
 
 // Task 04
 // Внесите изменение в предыдущий класс, сделав свойство bold, в функции конструкторе - необязательным.

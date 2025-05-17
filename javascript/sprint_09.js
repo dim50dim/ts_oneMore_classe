@@ -26,15 +26,25 @@ document.querySelector('.out-2').append(p_02.render());
 class Paragraph_03 {
     text;
     bold = false;
-    constructor(text) {
+    constructor(text, bold) {
         this.text = text;
+        this.bold = bold;
     }
     render() {
         const p = document.createElement('p');
-        p.textContent = this.text;
+        if (this.bold) {
+            const b = document.createElement('b');
+            b.textContent = this.text;
+            p.append(b);
+        }
+        else {
+            p.textContent = this.text;
+        }
         return p;
     }
 }
+const p_03 = new Paragraph_03('Земля – это память, за которую стоит бороться.', true);
+document.querySelector('.out-3').append(p_03.render());
 class ParagraphExample {
     text;
     wrap;
