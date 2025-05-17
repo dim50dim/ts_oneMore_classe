@@ -59,16 +59,16 @@ class Paragraph_05 {
         const capital = this.text.charAt(0).toUpperCase() + this.text.slice(1);
         if (this.bold) {
             const b = document.createElement('b');
-            b.textContent = this.text;
+            b.textContent = capital;
             p.append(b);
         }
         else {
-            p.textContent = this.text;
+            p.textContent = capital;
         }
         return p;
     }
 }
-const p_05 = new Paragraph_05('  и смерти нет почётней той, что ты принять готов за кости пращуров своих, за храм своих богов.  ');
+const p_05 = new Paragraph_05('  и смерти нет почётней той, что ты принять готов за кости пращуров своих, за храм своих богов.  ', true);
 document.querySelector('.out-5').append(p_05.render());
 class ParagraphExample {
     text;
