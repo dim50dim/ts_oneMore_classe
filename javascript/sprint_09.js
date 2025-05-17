@@ -108,4 +108,19 @@ class List_07 {
 const ul_07 = new List_07(['Нужно работать, а не вспоминать.', 'Даже у оружия нервы не в порядке.']);
 console.log(ul_07);
 document.querySelector('.out-7').append(ul_07.render());
+class List_08 {
+    data;
+    constructor(data) {
+        this.data = data;
+    }
+    render() {
+        const ul = document.createElement('ul');
+        for (let item of this.data) {
+            const li = document.createElement('li');
+            li.textContent = item;
+            ul.append(li);
+        }
+        return ul;
+    }
+}
 //# sourceMappingURL=sprint_09.js.map
