@@ -46,8 +46,9 @@ document.querySelector('.out-2').append(p_02.render());
 class Paragraph_03 {
             text: string;
             bold: boolean = false;
-     constructor(text){
+     constructor(text:string,bold?:boolean){
         this.text = text;
+        this.bold = bold;
      }
 
     render() : HTMLParagraphElement {
