@@ -24,7 +24,7 @@ document.querySelector('.out-1').append(p_01.render());
 
  class Paragraph_02{
         text: string;
-     constructor(text){
+     constructor(text:string){
         this.text = text;
      }
 
@@ -45,11 +45,13 @@ document.querySelector('.out-2').append(p_02.render());
 
 class Paragraph_03 {
             text: string;
+            bold: boolean = false;
      constructor(text){
         this.text = text;
      }
 
     render() : HTMLParagraphElement {
+        if(this.bold) 
         const p = document.createElement('p');
         p.textContent = this.text;
         return p;

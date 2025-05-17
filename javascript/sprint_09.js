@@ -25,6 +25,7 @@ const p_02 = new Paragraph_02('В раю без изменений.');
 document.querySelector('.out-2').append(p_02.render());
 class Paragraph_03 {
     text;
+    bold = false;
     constructor(text) {
         this.text = text;
     }
