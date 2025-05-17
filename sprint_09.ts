@@ -22,7 +22,14 @@ document.querySelector('.out-1').append(p_01.render());
 // Task 02
 // Создайте класс Paragraph_02. Скопируйте в него реализацию свойств и методов из Paragraph_01. Допишите конструктор, который принимает текст и присваивает его свойству text класса. Кстати, надеюсь вы догадались указать, что метод render возвращает тип HTMLParagraphElement.
 
-// тут пишем класс
+ class Paragraph_02{
+        text: string;
+    render() {
+        const p = document.createElement('p');
+        p.textContent = this.text;
+        return p;
+    }
+ }
 
 // Для проверки кода снимите комментарий ниже
 // const p_02 = new Paragraph_02('В раю без изменений.');

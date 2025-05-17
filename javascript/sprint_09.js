@@ -10,6 +10,14 @@ class Paragraph_01 {
 const p_01 = new Paragraph_01();
 p_01.text = 'A paragraph is a series of sentences that are organized and coherent.';
 document.querySelector('.out-1').append(p_01.render());
+class Paragraph_02 {
+    text;
+    render() {
+        const p = document.createElement('p');
+        p.textContent = this.text;
+        return p;
+    }
+}
 class ParagraphExample {
     text;
     wrap;
