@@ -83,4 +83,11 @@ class ParagraphExample {
         return elem;
     }
 }
+const obj_06 = {
+    text: 'Если у нас правда есть души, они сотканы из любви...',
+    wrap: 'div'
+};
+const p_06 = new ParagraphExample(obj_06);
+console.log(p_06);
+document.querySelector('.out-6').append(p_06.render());
 //# sourceMappingURL=sprint_09.js.map

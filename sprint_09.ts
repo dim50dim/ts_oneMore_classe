@@ -134,13 +134,13 @@ class ParagraphExample {
 }
 
 // Для проверки кода снимите комментарий ниже
-// const obj_06: { text: string, wrap: string } = {
-//     text: 'Если у нас правда есть души, они сотканы из любви...',
-//     wrap: 'div'
-// }
-// const p_06 = new ParagraphExample(obj_06);
-// console.log(p_06);
-// document.querySelector('.out-6').append(p_06.render());
+const obj_06: { text: string, wrap: string } = {
+    text: 'Если у нас правда есть души, они сотканы из любви...',
+    wrap: 'div'
+}
+const p_06 = new ParagraphExample(obj_06);
+console.log(p_06);
+document.querySelector('.out-6').append(p_06.render());
 
 
 // Task 07
