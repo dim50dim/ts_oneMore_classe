@@ -24,6 +24,10 @@ document.querySelector('.out-1').append(p_01.render());
 
  class Paragraph_02{
         text: string;
+     constructor(text){
+        this.text = text;
+     }
+
     render() : HTMLParagraphElement {
         const p = document.createElement('p');
         p.textContent = this.text;
@@ -32,8 +36,8 @@ document.querySelector('.out-1').append(p_01.render());
  }
 
 // Для проверки кода снимите комментарий ниже
-// const p_02 = new Paragraph_02('В раю без изменений.');
-// document.querySelector('.out-2').append(p_02.render());
+const p_02 = new Paragraph_02('В раю без изменений.');
+document.querySelector('.out-2').append(p_02.render());
 
 
 // Task 03
