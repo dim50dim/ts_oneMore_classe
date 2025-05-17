@@ -5,7 +5,7 @@
 
 class Paragraph_01 {
     text: string;
-    render() {
+    render(): HTMLParagraphElement {
         const p = document.createElement('p');
         p.textContent = this.text;
         return p;
@@ -24,7 +24,7 @@ document.querySelector('.out-1').append(p_01.render());
 
  class Paragraph_02{
         text: string;
-    render() {
+    render() : HTMLParagraphElement {
         const p = document.createElement('p');
         p.textContent = this.text;
         return p;
