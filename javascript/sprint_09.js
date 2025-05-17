@@ -23,6 +23,17 @@ class Paragraph_02 {
 }
 const p_02 = new Paragraph_02('В раю без изменений.');
 document.querySelector('.out-2').append(p_02.render());
+class Paragraph_03 {
+    text;
+    constructor(text) {
+        this.text = text;
+    }
+    render() {
+        const p = document.createElement('p');
+        p.textContent = this.text;
+        return p;
+    }
+}
 class ParagraphExample {
     text;
     wrap;

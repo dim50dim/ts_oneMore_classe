@@ -43,7 +43,18 @@ document.querySelector('.out-2').append(p_02.render());
 // Task 03
 // Создайте класс Paragraph_03. Скопируйте в него реализацию свойств и методов из Paragraph_02. Добавьте свойство bold типа boolean, которое по умолчанию равно false. В метод render() добавьте строку, которая проверяет свойство bold и если оно равно true, оборачивает весь текст внутри параграфа тегом b. В конструктор добавьте вторым аргументом свойство bold.
 
-// тут пишем класс
+class Paragraph_03 {
+            text: string;
+     constructor(text){
+        this.text = text;
+     }
+
+    render() : HTMLParagraphElement {
+        const p = document.createElement('p');
+        p.textContent = this.text;
+        return p;
+    }
+}
 
 
 // Для проверки кода снимите комментарий ниже
